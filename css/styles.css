@@ -1,0 +1,188 @@
+/* Color Palette
+#FA7921 - Princeton Orange
+#FE9920 - Deep Saffron
+#B9A44C - Brass
+#566E3D - Deep Spring Bud
+#082E42 - Dark Imperial Blue
+*/
+/* Font families
+    font-family: 'Merriweather', serif;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+*/
+/* Global Styles */
+html {
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+body {
+    /* background: white; */
+    background: url("../images/ALLRGB.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    margin: 0px;
+}
+h1, h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-style: oblique;
+    font-weight: 300;
+}
+h1{
+    font-size: 80px;
+    line-height: 0.5;  
+    margin-top: 40px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+h3 {
+    margin: 0;
+}
+a {
+    color: #FF007F;
+}
+a:hover {
+    text-decoration: none;
+}
+.content-wrapper {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.btn {
+    border: 1px solid black;
+    text-decoration: none;
+    background: #FF007F;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Header and Footer */
+header h1, header h2 {
+    color: #B9A44C;
+}
+.profile-img {
+    border-radius: 40px;
+}
+header {
+    padding-top: 50px;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255,255,255,0.2)), url("../images/BadLands.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #B9A44C;
+}
+footer {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/YellowStone.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FF007F;
+}
+#info {
+    font-size: 0;
+}
+#info a{
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Navigation */
+
+/* Work Experience */
+.work {
+    background: rgba(254,153,32,0.8);
+}
+h3 ~ p{
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 30px;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+.individual {
+    min-height: 150px;
+}
+/* Education */
+.education {
+    background: linear-gradient(rgba(250,121,33,0.8), rgba(250,121,33,0.5)), 
+        url(../images/campus.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+}
+p + h3 {
+    margin-top: 30px;
+}
+/* Additional Information */ 
+/* Media Queries */
+@media (min-width: 800px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+    nav {
+        text-align: center;
+        background:whitesmoke;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    nav a {
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+@media (max-width: 799px) {
+    header {
+        text-align: center;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .col-narrow {
+        padding-bottom: 20px;
+    }
+    .profile-img {
+        width: 200px;
+    }
+    nav {
+        background:whitesmoke;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    nav a {
+        display: inline-block;
+        padding: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
